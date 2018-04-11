@@ -10,6 +10,10 @@ router.get('/:param', (req, res, next) => {
   res.send('get user with id: ' + req.params.param);
 });
 
+router.post('/', (req, res, next) => {
+  res.send('Insert user');
+});
+
 router.post('/:param', (req, res, next) => {
   res.send('Insert user with Id: ' + req.params.param);
 });
